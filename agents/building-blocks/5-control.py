@@ -13,7 +13,7 @@ class IntentClassification(BaseModel):
     confidence: float
     reasoning: str
 
-
+# noinspection PyTypeChecker
 def route_based_on_intent(user_input: str) -> tuple[str, IntentClassification]:
     client = OpenAI()
     response = client.responses.parse(

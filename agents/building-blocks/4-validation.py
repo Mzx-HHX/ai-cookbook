@@ -18,7 +18,7 @@ class TaskResult(BaseModel):
     completed: bool
     priority: int
 
-
+# noinspection PyTypeChecker
 def structured_intelligence(prompt: str) -> TaskResult:
     client = OpenAI()
     response = client.responses.parse(

@@ -48,6 +48,7 @@ def intelligence_with_tools(prompt: str) -> str:
 
     input_messages = [{"role": "user", "content": prompt}]
 
+    # noinspection PyTypeChecker
     # Step 1: Call model with tools
     response = client.responses.create(
         model="gpt-4o",

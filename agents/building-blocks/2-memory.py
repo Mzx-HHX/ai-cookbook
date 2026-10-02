@@ -9,7 +9,7 @@ from openai import OpenAI
 
 client = OpenAI()
 
-
+# noinspection PyTypeChecker
 def ask_joke_without_memory():
     response = client.responses.create(
         model="gpt-4o-mini",
@@ -19,7 +19,7 @@ def ask_joke_without_memory():
     )
     return response.output_text
 
-
+# noinspection PyTypeChecker
 def ask_followup_without_memory():
     response = client.responses.create(
         model="gpt-4o-mini",
@@ -29,7 +29,7 @@ def ask_followup_without_memory():
     )
     return response.output_text
 
-
+# noinspection PyTypeChecker
 def ask_followup_with_memory(joke_response: str):
     response = client.responses.create(
         model="gpt-4o-mini",

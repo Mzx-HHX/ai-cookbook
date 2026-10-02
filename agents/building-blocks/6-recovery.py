@@ -13,7 +13,7 @@ class UserInfo(BaseModel):
     email: str
     age: Optional[int] = None  # Optional field
 
-
+# noinspection PyTypeChecker
 def resilient_intelligence(prompt: str) -> str:
     client = OpenAI()
 

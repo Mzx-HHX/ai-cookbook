@@ -4,7 +4,7 @@ This component handles context understanding, instruction following, and respons
 
 More info: https://platform.openai.com/docs/guides/text?api-mode=responses
 """
-
+# noinspection PyTypeChecker
 from openai import OpenAI
 
 
